@@ -1,0 +1,616 @@
+<!doctype html>
+<html lang="am"><head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20261009-04-61a833b","C":{"Abril Fatface":"YACgEZbkUVE,0","Albert Sans":"YAHO2HRfeh4,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo Black":"YACgEZulLoA,0","Archivo":"YAHO2-t-jNE,0","Arial":"YAGyDvJ_4Ts,0","Baloo 2":"YAHO2IcQUcM,0","Barlow Condensed":"YAFdJljEuFc,0","Barlow":"YAFdJsyuOPM,1","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Canva Sans":"YAFdJjTk5UU,1","Caveat":"YALBs2ploWQ,0","Cinzel":"YACgEeV8bIQ,0","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","Courier Prime":"YAD1aFjegN8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Figtree":"YAHO2b-mV7A,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAFdJpU7Kkk,0","Fredoka":"YACgEZml080,0","Georgia":"YAGzXkO0pEM,0","Hanken Grotesk":"YAHO2VB9G0I,0","Helvetica":"YAFcf7zkXN0,0","IBM Plex Mono":"YAFdJkmvhGI,0","IBM Plex Sans":"YAFdJgT0SHI,0","Impact":"YAFcfnjI7Vk,0","Instrument Sans":"YAHO2bKyaSQ,0","Instrument Serif":"YAHFeOnZNEk,0","Inter":"YAFdJvSyp_k,3","Italiana":"YAHO2Toik_w,0","Jacques Francois":"YAHO2a5g66Q,0","JetBrains Mono":"YAFdJksXcAk,0","Josefin Sans":"YAFdJjvw9Ps,0","Karla":"YAHO2V2NSXM,0","Lato":"YAFdJuFCnaw,0","Libre Baskerville":"YACgEUFdPdA,0","Libre Caslon Display":"YAHO2XhLmt0,0","Lobster":"YAD8SnSjSFI,0","Lora":"YACgEXvxf8Q,0","Manrope":"YAHO2b2feC4,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YAFdtQi73Xs,0","Noto Sans JP":"YAFdJiHXlcI,0","Noto Sans KR":"YAGsojZj-RQ,0","Nunito Sans":"YAFdtQJYB9w,1","Nunito":"YAFdJoNRMmU,1","Oleo Script":"YACgEQQ14jI,0","Oswald":"YACgEQY10lw,0","Outfit":"YAHO2nVlg14,0","Pacifico":"YADLjORQ1u4,0","Playfair Display":"YAFdJhem5V8,1","Plus Jakarta Sans":"YAHO2gdhi18,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Public Sans":"YAFdJj8NdaU,1","Quicksand":"YAFdJpYtCxE,1","Raleway":"YAFdJhmxbVQ,1","Roboto Slab":"YAFdJswIKAg,0","Rockwell":"YAFcfyVZnN0,0","Rye":"YACgEdQP21k,0","Sarabun":"YAFdJssSnME,0","Schibsted Grotesk":"YAHO2sWydRk,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Space Grotesk":"YAHO2sjPCSM,0","Space Mono":"YADW1-vpsoc,0","Spectral":"YAHO2rVUHIM,0","Times New Roman":"YAGzXW3gftg,0","Trebuchet MS":"YAFcfrglpVA,0","Ubuntu":"YACgERDU--Q,0","Verdana":"YAGzXTctYtQ,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0"}}');</script><script src="/_sdk/3ea5843eacd3e51f.telemetry_sdk.js" integrity="sha512-1IT905GQp6Xezy7dJYJjQl6KtI/PDxD5Vu755gJMNA+luF1QkRT8rHzF+xP7Ekem4HWP8sPFcQQAmx6FCSGaMg=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ውዳለም ዲጂታል ዕቁብ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    * { font-family: "Noto Sans Ethiopic", sans-serif; }
+    body { margin: 0; }
+    .app-shell { min-height: calc(100 * min(var(--vh, 1vh), 1vh)); }
+    .ticket-cell { min-height: 38px; }
+    .ticket-cell:focus-visible,
+    button:focus-visible,
+    input:focus-visible {
+      outline: 3px solid #fbbf24;
+      outline-offset: 2px;
+    }
+    .toast-in { animation: toastIn .25s ease-out; }
+    @keyframes toastIn {
+      from { opacity: 0; transform: translateY(-12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .wheel-spin { animation: wheelSpin 2.7s cubic-bezier(.18,.7,.2,1) forwards; }
+    @keyframes wheelSpin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(1080deg); }
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com/3.4.17" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js" type="text/javascript"></script>
+  <script src="/_sdk/263f7f1ec427fef1.data_sdk.js" type="text/javascript" integrity="sha512-G5r5+ZpgQ1ELqZ8tI9imlWClKvYZ57SrzbGr898u8le5l2OuBwnWDOf9qbb9mCGSCmLi/3zszXyL+nX96lu7Lg=="></script>
+  <script src="/_sdk/7f51878a26dda571.editing_sdk.js" type="text/javascript" integrity="sha512-lv2tc4rONGhIWbY0ih8IjIqw943uiwvC9BM8dCj48SpTnOr728gJkoyMnfD0Yfa9KbBgBGdq6uAFyQuDfezvEg=="></script>
+  <script src="/_sdk/221ab7571fc66e1b.resizing_sdk.js" type="text/javascript" integrity="sha512-brXJ8PEVMWyvFfRXR3J+lXcBL9xcTCDHg4wYW7JDpQNdbOBkBezAQsQLUeUc2BOFREYS4N9GREjyhzX1N1VFdA=="></script>
+ </head>
+ <body data-template-id="__page-root" style="background: linear-gradient(135deg, rgb(232, 234, 246), rgb(197, 202, 233));">
+  <div class="app-shell w-full px-4 py-5" style="background:linear-gradient(135deg,#E8EAF6 0%,#C5CAE9 52%,#E3F2FD 100%);">
+   <div id="toast" class="fixed right-4 top-4 z-50 hidden" aria-live="polite"></div>
+   <header class="mx-auto flex w-full max-w-3xl items-center justify-between gap-4 pb-5">
+    <div class="flex items-center gap-3">
+     <div class="flex h-11 w-11 items-center justify-center rounded-full shadow-md" style="background:#1A237E;">
+      <i data-lucide="circle-dollar-sign" class="text-white" style="width:22px;height:22px;"></i>
+     </div>
+     <div>
+      <h1 data-template-id="app-title" class="canva-text font-bold leading-tight" style="color: rgb(26, 35, 126); font-weight: 700; font-style: normal; font-size: 26px;">ውዳለም ዲጂታል ዕቁብ</h1>
+      <p data-template-id="app-tagline" class="canva-text text-sm" style="color: rgb(71, 85, 105); font-weight: 500; font-style: normal; font-size: 16px;">በጋራ እንድግ</p>
+     </div>
+    </div><button id="backHomeButton" type="button" class="hidden rounded-lg px-3 py-2 text-sm font-bold text-white shadow-sm hover:opacity-90" style="background:#546E7A;"> <span data-template-id="back-home-label" class="canva-button" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">ወደ ዋና ገጽ</span> </button>
+   </header>
+   <main class="mx-auto w-full max-w-3xl">
+    <section id="homeView" class="overflow-hidden rounded-3xl bg-white shadow-xl">
+     <div data-template-id="home-banner" class="canva-banner px-6 py-4 text-white" style="background:#1A237E;">
+      <div class="flex items-center gap-2">
+       <i data-lucide="landmark" style="width:20px;height:20px;"></i> <span data-template-id="home-banner-label" class="canva-text font-bold" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">የእርስዎ ዲጂታል ዕቁብ</span>
+      </div>
+     </div>
+     <div class="p-6 sm:p-9">
+      <div class="text-center">
+       <div class="mb-4 text-6xl">
+        🤝
+       </div>
+       <h2 data-template-id="home-title" class="canva-text font-bold" style="color: rgb(26, 35, 126); font-weight: 700; font-style: normal; font-size: 24px;">ውዳለም ዲጂታል ዕቁብ</h2>
+       <p data-template-id="home-description" class="canva-text mx-auto mt-3 max-w-xl leading-7" style="color: rgb(71, 85, 105); font-weight: 400; font-style: normal; font-size: 16px;">ትኬትዎን ይምረጡ፣ ይመዝገቡ እና በዕቁብ ዙር ይሳተፉ።</p>
+      </div>
+      <div class="mx-auto mt-7 grid max-w-xl gap-3 sm:grid-cols-2">
+       <article class="rounded-2xl border border-indigo-100 bg-indigo-50 p-4 text-center">
+        <p data-template-id="ticket-price-label" class="canva-text text-sm font-bold" style="color: rgb(49, 46, 129); font-weight: 700; font-style: normal; font-size: 16px;">የ1 ትኬት ዋጋ</p>
+        <p id="publicPrice" class="mt-1 text-2xl font-bold" style="color:#1A237E;">50 ብር</p>
+       </article>
+       <article class="rounded-2xl border border-amber-200 bg-amber-50 p-4 text-center">
+        <p data-template-id="round-label" class="canva-text text-sm font-bold" style="color: rgb(146, 64, 14); font-weight: 700; font-style: normal; font-size: 16px;">የአሁኑ ዙር</p>
+        <p id="publicRound" class="mt-1 text-2xl font-bold" style="color:#92400E;">1</p>
+       </article>
+      </div>
+      <section class="mx-auto mt-5 max-w-xl rounded-2xl border border-slate-200 bg-slate-50 p-4">
+       <h3 data-template-id="payment-title" class="canva-text font-bold" style="color: rgb(31, 41, 55); font-weight: 700; font-style: normal; font-size: 19px;">የክፍያ መረጃ — ለመቅዳት ይጫኑ</h3>
+       <div class="mt-3 grid gap-2 sm:grid-cols-2">
+        <button id="copyCbeButton" type="button" class="flex items-center justify-between rounded-xl border border-slate-200 bg-white px-3 py-3 text-left text-sm font-semibold text-slate-700 hover:border-indigo-400"> <span data-template-id="cbe-payment-label" class="canva-text" style="color: rgb(51, 65, 85); font-weight: 600; font-style: normal; font-size: 16px;">CBE — 1000209433676</span> <i data-lucide="copy" style="width:17px;height:17px;color:#1A237E;"></i> </button> <button id="copyTelebirrButton" type="button" class="flex items-center justify-between rounded-xl border border-slate-200 bg-white px-3 py-3 text-left text-sm font-semibold text-slate-700 hover:border-indigo-400"> <span data-template-id="telebirr-payment-label" class="canva-text" style="color: rgb(51, 65, 85); font-weight: 600; font-style: normal; font-size: 16px;">Telebirr — 0921523023</span> <i data-lucide="copy" style="width:17px;height:17px;color:#1A237E;"></i> </button>
+       </div>
+      </section>
+      <div class="mx-auto mt-6 grid max-w-xl gap-3 sm:grid-cols-2">
+       <button id="openRegistrationButton" type="button" data-template-id="open-registration-button" class="canva-button flex items-center justify-center gap-2 rounded-xl px-5 py-4 font-bold text-white shadow-md transition hover:opacity-90" style="background: rgb(76, 175, 80); color: rgb(255, 255, 255);"> <i data-lucide="user-plus" style="width:19px;height:19px;"></i><span data-template-id="open-registration-label" class="canva-text" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">ተሳታፊ ይሁኑ</span> </button> <button id="openAdminButton" type="button" data-template-id="open-admin-button" class="canva-button flex items-center justify-center gap-2 rounded-xl px-5 py-4 font-bold text-white shadow-md transition hover:opacity-90" style="background: rgb(13, 71, 161); color: rgb(255, 255, 255);"> <i data-lucide="layout-dashboard" style="width:19px;height:19px;"></i><span data-template-id="open-admin-label" class="canva-text" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">አድሚን ዳሽቦርድ</span> </button>
+      </div>
+     </div>
+    </section>
+    <section id="registrationView" class="hidden overflow-hidden rounded-3xl bg-white shadow-xl">
+     <div data-template-id="registration-banner" class="canva-banner flex items-center gap-2 px-6 py-4 text-white" style="background:#1A237E;">
+      <i data-lucide="clipboard-pen-line" style="width:20px;height:20px;"></i> <span data-template-id="registration-title" class="canva-text font-bold" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">የተሳታፊ መመዝገቢያ</span>
+     </div>
+     <form id="registrationForm" class="p-6 sm:p-8">
+      <div class="grid gap-4 sm:grid-cols-2">
+       <div>
+        <label data-template-id="name-label" class="canva-text text-sm font-bold" for="nameInput" style="color: rgb(51, 65, 85); font-weight: 700; font-style: normal; font-size: 16px;">ሙሉ ስም</label> <input id="nameInput" required="" type="text" data-template-id="name-input" class="canva-input mt-1 w-full rounded-xl border border-slate-300 px-3 py-3 outline-none focus:border-indigo-600" placeholder="ስም ያስገቡ" style="font-weight: 400; font-style: normal; font-size: 16px;">
+       </div>
+       <div>
+        <label data-template-id="phone-label" class="canva-text text-sm font-bold" for="phoneInput" style="color: rgb(51, 65, 85); font-weight: 700; font-style: normal; font-size: 16px;">ስልክ ቁጥር</label> <input id="phoneInput" required="" type="tel" data-template-id="phone-input" class="canva-input mt-1 w-full rounded-xl border border-slate-300 px-3 py-3 outline-none focus:border-indigo-600" placeholder="09XXXXXXXX" style="font-weight: 400; font-style: normal; font-size: 16px;">
+       </div>
+      </div>
+      <div class="mt-4">
+       <label data-template-id="address-label" class="canva-text text-sm font-bold" for="addressInput" style="color: rgb(51, 65, 85); font-weight: 700; font-style: normal; font-size: 16px;">አድራሻ</label> <input id="addressInput" required="" type="text" data-template-id="address-input" class="canva-input mt-1 w-full rounded-xl border border-slate-300 px-3 py-3 outline-none focus:border-indigo-600" placeholder="አድራሻ ያስገቡ" style="font-weight: 400; font-style: normal; font-size: 16px;">
+      </div>
+      <div class="mt-5">
+       <label data-template-id="ticket-label" class="canva-text text-sm font-bold" for="ticketInput" style="color: rgb(51, 65, 85); font-weight: 700; font-style: normal; font-size: 16px;">የትኬት ቁጥር</label> <input id="ticketInput" required="" type="number" min="1" data-template-id="ticket-input" class="canva-input mt-1 w-full rounded-xl border-2 border-indigo-600 px-3 py-3 text-lg font-bold outline-none" placeholder="በታች ካሉት ትኬቶች ይምረጡ" style="font-weight: 400; font-style: normal; font-size: 16px;">
+       <p data-template-id="ticket-helper" class="canva-text mt-2 text-sm" style="color: rgb(100, 116, 139); font-weight: 400; font-style: normal; font-size: 16px;">አረንጓዴ ትኬቶች ክፍት ናቸው። ግራጫ ትኬቶች ተይዘዋል።</p>
+       <div id="participantGrid" class="mt-3 grid grid-cols-10 gap-1 rounded-xl border-2 p-2" style="border-color:#4CAF50;background:#EEF8EF;"></div>
+      </div><button id="registerButton" type="submit" data-template-id="register-button" class="canva-button mt-6 flex w-full items-center justify-center gap-2 rounded-xl px-5 py-4 font-bold text-white shadow-md hover:opacity-90 disabled:opacity-60" style="background: rgb(76, 175, 80); color: rgb(255, 255, 255);"> <i data-lucide="check-circle-2" style="width:19px;height:19px;"></i><span data-template-id="register-label" class="canva-text" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">ምዝገባ ላክ</span> </button>
+      <p id="registrationLoading" data-template-id="registration-loading" class="canva-text mt-3 hidden text-center text-sm" style="color: rgb(100, 116, 139); font-weight: 400; font-style: normal; font-size: 16px;">እየተመዘገበ ነው...</p>
+     </form>
+    </section>
+    <section id="adminView" class="hidden overflow-hidden rounded-3xl shadow-xl" style="background:#E3F2FD;">
+     <div data-template-id="admin-banner" class="canva-banner flex items-center gap-2 px-6 py-4 text-white" style="background:#0D47A1;">
+      <i data-lucide="settings-2" style="width:20px;height:20px;"></i> <span data-template-id="admin-title" class="canva-text font-bold" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">የአድሚን ዳሽቦርድ</span>
+     </div>
+     <div class="space-y-5 p-5 sm:p-7">
+      <section class="rounded-2xl bg-white p-4 shadow-sm">
+       <h2 data-template-id="settings-title" class="canva-text font-bold" style="color: rgb(13, 71, 161); font-weight: 700; font-style: normal; font-size: 24px;">የዕቁብ ማስተካከያዎች</h2>
+       <p data-template-id="settings-description" class="canva-text mt-1 text-sm" style="color: rgb(100, 116, 139); font-weight: 400; font-style: normal; font-size: 16px;">እዚህ የሚቀየሩ ዋጋዎች በተሳታፊ ገጽም በተመሳሳይ ይታያሉ።</p>
+       <div class="mt-4 grid gap-3 sm:grid-cols-3">
+        <div class="rounded-xl border border-blue-100 bg-blue-50 p-3">
+         <p data-template-id="ticket-range-label" class="canva-text text-xs font-bold" style="color: rgb(30, 58, 138); font-weight: 700; font-style: normal; font-size: 16px;">የትኬት ብዛት</p>
+         <div class="mt-2 flex items-center justify-between gap-2">
+          <button id="decreaseRange" type="button" class="rounded-lg px-3 py-2 font-bold text-white" style="background:#0D47A1;">−</button> <span id="maxTicketText" class="font-bold text-blue-950">100</span> <button id="increaseRange" type="button" class="rounded-lg px-3 py-2 font-bold text-white" style="background:#0D47A1;">+</button>
+         </div>
+        </div>
+        <div class="rounded-xl border border-emerald-100 bg-emerald-50 p-3">
+         <p data-template-id="ticket-price-admin-label" class="canva-text text-xs font-bold" style="color: rgb(6, 95, 70); font-weight: 700; font-style: normal; font-size: 16px;">የ1 ትኬት ዋጋ</p>
+         <div class="mt-2 flex items-center justify-between gap-2">
+          <button id="decreasePrice" type="button" class="rounded-lg px-3 py-2 font-bold text-white" style="background:#047857;">−</button> <span id="priceText" class="font-bold text-emerald-900">50 ብር</span> <button id="increasePrice" type="button" class="rounded-lg px-3 py-2 font-bold text-white" style="background:#047857;">+</button>
+         </div>
+        </div>
+        <div class="rounded-xl border border-amber-200 bg-amber-50 p-3">
+         <p data-template-id="round-admin-label" class="canva-text text-xs font-bold" style="color: rgb(146, 64, 14); font-weight: 700; font-style: normal; font-size: 16px;">የዕቁብ ዙር</p>
+         <div class="mt-2 flex items-center justify-between gap-2">
+          <button id="decreaseRound" type="button" class="rounded-lg px-3 py-2 font-bold text-white" style="background:#B45309;">−</button> <span id="roundText" class="font-bold text-amber-900">1</span> <button id="increaseRound" type="button" class="rounded-lg px-3 py-2 font-bold text-white" style="background:#B45309;">+</button>
+         </div>
+        </div>
+       </div>
+      </section>
+      <section class="grid grid-cols-3 gap-3">
+       <article class="rounded-2xl bg-white p-4 text-center shadow-sm">
+        <p id="statTotal" class="text-2xl font-bold" style="color:#1A237E;">100</p>
+        <p data-template-id="total-stat-label" class="canva-text mt-1 text-xs" style="color: rgb(100, 116, 139); font-weight: 400; font-style: normal; font-size: 16px;">ጠቅላላ ትኬት</p>
+       </article>
+       <article class="rounded-2xl bg-white p-4 text-center shadow-sm">
+        <p id="statApproved" class="text-2xl font-bold" style="color:#15803D;">0</p>
+        <p data-template-id="approved-stat-label" class="canva-text mt-1 text-xs" style="color: rgb(100, 116, 139); font-weight: 400; font-style: normal; font-size: 16px;">የጸደቁ</p>
+       </article>
+       <article class="rounded-2xl bg-white p-4 text-center shadow-sm">
+        <p id="statPending" class="text-2xl font-bold" style="color:#B45309;">0</p>
+        <p data-template-id="pending-stat-label" class="canva-text mt-1 text-xs" style="color: rgb(100, 116, 139); font-weight: 400; font-style: normal; font-size: 16px;">በመጠባበቅ ላይ</p>
+       </article>
+      </section>
+      <section class="rounded-2xl bg-white p-4 shadow-sm">
+       <h2 data-template-id="ticket-grid-title" class="canva-text font-bold" style="color: rgb(13, 71, 161); font-weight: 700; font-style: normal; font-size: 24px;">የትኬት ግሪድ</h2>
+       <div id="adminGrid" class="mt-3 grid grid-cols-10 gap-1 rounded-xl border border-slate-200 bg-slate-50 p-2"></div>
+      </section>
+      <section class="rounded-2xl bg-white p-4 shadow-sm">
+       <div class="flex items-center justify-between gap-3">
+        <h2 data-template-id="participants-title" class="canva-text font-bold" style="color: rgb(13, 71, 161); font-weight: 700; font-style: normal; font-size: 24px;">የተሳታፊዎች ዝርዝር</h2><span id="participantCount" class="rounded-full bg-indigo-100 px-3 py-1 text-xs font-bold text-indigo-800">0</span>
+       </div>
+       <p data-template-id="telegram-helper" class="canva-text mt-1 text-sm" style="color: rgb(100, 116, 139); font-weight: 400; font-style: normal; font-size: 16px;">Telegram ላይ አጋራ የሚለው ቁልፍ የተሳታፊውን መረጃ ለመላክ የTelegram ማጋሪያ ገጽ ይከፍታል።</p>
+       <div id="participantList" class="mt-4 space-y-3">
+        <p data-template-id="empty-participant-state" class="canva-text rounded-xl bg-slate-50 p-4 text-center text-sm" style="color: rgb(100, 116, 139); font-weight: 400; font-style: italic; font-size: 16px;">እስካሁን ምንም ተሳታፊ የለም።</p>
+       </div>
+      </section>
+      <section class="rounded-2xl bg-white p-4 shadow-sm">
+       <h2 data-template-id="draw-title" class="canva-text font-bold" style="color: rgb(13, 71, 161); font-weight: 700; font-style: normal; font-size: 24px;">አሸናፊ ይምረጡ</h2>
+       <p data-template-id="draw-helper" class="canva-text mt-1 text-sm" style="color: rgb(100, 116, 139); font-weight: 400; font-style: normal; font-size: 16px;">ዕጣው ከጸደቁና ከዚህ ቀደም ካላሸነፉ ተሳታፊዎች መካከል ይወጣል።</p>
+       <div id="winnerPanel" class="mt-4 hidden rounded-2xl border border-amber-200 bg-amber-50 p-5 text-center">
+        <div id="wheel" class="mx-auto flex h-24 w-24 items-center justify-center rounded-full border-8 border-amber-400 bg-white text-4xl shadow-md">
+         🎉
+        </div>
+        <p data-template-id="winner-label" class="canva-text mt-4 text-sm font-bold" style="color: rgb(146, 64, 14); font-weight: 700; font-style: normal; font-size: 16px;">የተመረጠው አሸናፊ</p>
+        <p id="winnerTicket" class="mt-1 text-3xl font-bold" style="color:#D97706;"></p>
+        <p id="winnerName" class="mt-1 text-lg font-bold" style="color:#1A237E;"></p>
+       </div><button id="drawButton" type="button" data-template-id="draw-button" class="canva-button mt-4 flex w-full items-center justify-center gap-2 rounded-xl px-5 py-4 font-bold text-white shadow-md hover:opacity-90 disabled:opacity-60" style="background: rgb(255, 152, 0); color: rgb(255, 255, 255);"> <i data-lucide="shuffle" style="width:19px;height:19px;"></i><span data-template-id="draw-button-label" class="canva-text" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">ዕጣ አውጣ</span> </button>
+      </section>
+     </div>
+    </section>
+   </main>
+  </div>
+  <template id="participantTemplate">
+   <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4" data-row-id="">
+    <div class="flex flex-col justify-between gap-3 sm:flex-row sm:items-center">
+     <div>
+      <div class="flex flex-wrap items-center gap-2">
+       <h3 class="participant-name font-bold text-slate-800"></h3><span class="participant-status rounded-full px-2 py-1 text-xs font-bold"></span>
+      </div>
+      <p class="participant-details mt-1 text-sm text-slate-600"></p>
+      <p class="participant-ticket mt-1 text-sm font-bold text-indigo-800"></p>
+     </div>
+     <div class="flex flex-wrap gap-2">
+      <button type="button" class="approve-button rounded-lg px-3 py-2 text-sm font-bold text-white hover:opacity-90" style="background:#15803D;"> <span data-template-id="approve-button-label" class="canva-button"></span> </button> <button type="button" class="telegram-button rounded-lg px-3 py-2 text-sm font-bold text-white hover:opacity-90" style="background:#229ED9;"> <span data-template-id="telegram-button-label" class="canva-button"></span> </button> <button type="button" class="delete-button rounded-lg px-3 py-2 text-sm font-bold text-white hover:opacity-90" style="background:#DC2626;"> <span data-template-id="delete-button-label" class="canva-button"></span> </button>
+      <div class="delete-confirm hidden items-center gap-2">
+       <span data-template-id="delete-confirm-label" class="canva-text text-xs font-bold text-red-700"></span> <button type="button" class="confirm-delete-button rounded-lg bg-red-700 px-2 py-2 text-xs font-bold text-white">✓</button> <button type="button" class="cancel-delete-button rounded-lg bg-slate-300 px-2 py-2 text-xs font-bold text-slate-800">×</button>
+      </div>
+     </div>
+    </div>
+   </article>
+  </template>
+  <script>
+    const DEFAULT_SETTINGS = { maxTicket: 100, price: 50, round: 1 };
+    const SETTINGS_NAME = "__WUDALEM_SETTINGS__";
+
+    let records = [];
+    let settingsRecord = null;
+    let settings = { ...DEFAULT_SETTINGS };
+    let pendingSettingsWrite = false;
+
+    const $ = (id) => document.getElementById(id);
+
+    function showToast(message, type = "success") {
+      const colors = {
+        success: "#15803D",
+        error: "#DC2626",
+        warning: "#B45309"
+      };
+      $("toast").innerHTML = `<div class="toast-in rounded-xl px-4 py-3 text-sm font-bold text-white shadow-xl" style="background:${colors[type] || colors.success};">${message}</div>`;
+      $("toast").classList.remove("hidden");
+      setTimeout(() => $("toast").classList.add("hidden"), 3200);
+    }
+
+    // --- የአድሚን ፒን (Awae -> 8692) ማረጋገጫ ፋንክሽን ---
+    function verifyAdminAccess() {
+      const adminPassword = "8692"; 
+      let entered = prompt("እባክዎ የአድሚን ፒን (PIN) ያስገቡ፡");
+      if (entered === null || entered !== adminPassword) {
+        alert("የገባው ፒን ስህተት ነው ወይም ተሰርዟል!");
+        showView("home");
+        return false;
+      }
+      return true;
+    }
+
+    function showView(view) {
+      if (view === "admin") {
+        if (!verifyAdminAccess()) return;
+      }
+      $("homeView").classList.toggle("hidden", view !== "home");
+      $("registrationView").classList.toggle("hidden", view !== "registration");
+      $("adminView").classList.toggle("hidden", view !== "admin");
+      $("backHomeButton").classList.toggle("hidden", view === "home");
+    }
+
+    function isSettingsRecord(record) {
+      return record.name === SETTINGS_NAME && record.status === "settings";
+    }
+
+    function participants() {
+      return records.filter(record => !isSettingsRecord(record));
+    }
+
+    function parseSettings(record) {
+      if (!record) return { ...DEFAULT_SETTINGS };
+      try {
+        const saved = JSON.parse(record.address || "{}");
+        return {
+          maxTicket: Number(saved.maxTicket) || DEFAULT_SETTINGS.maxTicket,
+          price: Number(saved.price) || DEFAULT_SETTINGS.price,
+          round: Number(saved.round) || DEFAULT_SETTINGS.round
+        };
+      } catch {
+        return { ...DEFAULT_SETTINGS };
+      }
+    }
+
+    function updateSettingsUI() {
+      $("publicPrice").textContent = `${settings.price} ብር`;
+      $("publicRound").textContent = settings.round;
+      $("maxTicketText").textContent = settings.maxTicket;
+      $("priceText").textContent = `${settings.price} ብር`;
+      $("roundText").textContent = settings.round;
+      $("ticketInput").max = settings.maxTicket;
+    }
+
+    async function saveSettings(nextSettings) {
+      if (pendingSettingsWrite) return;
+      pendingSettingsWrite = true;
+
+      const clean = {
+        maxTicket: Math.max(10, Math.min(999, Number(nextSettings.maxTicket))),
+        price: Math.max(5, Math.min(10000, Number(nextSettings.price))),
+        round: Math.max(1, Math.min(999, Number(nextSettings.round)))
+      };
+
+      const systemRow = {
+        name: SETTINGS_NAME,
+        phone: "",
+        address: JSON.stringify(clean),
+        ticket: 0,
+        is_winner: false,
+        won_at: "",
+        status: "settings"
+      };
+
+      const result = settingsRecord
+        ? await window.dataSdk.update({ ...settingsRecord, ...systemRow })
+        : await window.dataSdk.create(systemRow);
+
+      pendingSettingsWrite = false;
+
+      if (!result.isOk) {
+        showToast("ማስተካከያው ሊቀመጥ አልቻለም።", "error");
+        return;
+      }
+      showToast("ማስተካከያው ተቀምጧል።");
+    }
+
+    function ticketState(ticket) {
+      const participant = participants().find(item => item.ticket === ticket);
+      if (!participant) return "available";
+      if (participant.is_winner) return "winner";
+      if (participant.status === "approved") return "approved";
+      return "pending";
+    }
+
+    function renderTicketGrid(targetId, selectable) {
+      const grid = $(targetId);
+      const old = new Map([...grid.children].map(el => [el.dataset.ticket, el]));
+      const needed = new Set();
+
+      for (let number = 1; number <= settings.maxTicket; number++) {
+        const key = String(number);
+        needed.add(key);
+
+        let cell = old.get(key);
+        if (!cell) {
+          cell = document.createElement(selectable ? "button" : "div");
+          cell.dataset.ticket = key;
+          cell.className = "ticket-cell rounded-md border text-center text-xs font-bold transition";
+          if (selectable) {
+            cell.type = "button";
+            cell.addEventListener("click", () => {
+              if (cell.dataset.state === "available") $("ticketInput").value = cell.dataset.ticket;
+            });
+          }
+          grid.appendChild(cell);
+        }
+
+        const state = ticketState(number);
+        cell.dataset.state = state;
+        cell.textContent = number;
+
+        const styles = {
+          available: "background:#FFFFFF;color:#166534;border-color:#86EFAC;",
+          pending: "background:#E5E7EB;color:#4B5563;border-color:#9CA3AF;",
+          approved: "background:#4CAF50;color:#FFFFFF;border-color:#15803D;",
+          winner: "background:#FBBF24;color:#78350F;border-color:#D97706;"
+        };
+        cell.style.cssText = styles[state];
+
+        if (selectable) {
+          cell.disabled = state !== "available";
+          cell.classList.toggle("opacity-50", state !== "available");
+          cell.classList.toggle("cursor-not-allowed", state !== "available");
+          cell.classList.toggle("hover:shadow-md", state === "available");
+        }
+        old.delete(key);
+      }
+
+      old.forEach(node => node.remove());
+    }
+
+    function renderStats() {
+      const rows = participants();
+      $("statTotal").textContent = settings.maxTicket;
+      $("statApproved").textContent = rows.filter(row => row.status === "approved").length;
+      $("statPending").textContent = rows.filter(row => row.status !== "approved").length;
+      $("participantCount").textContent = rows.length;
+    }
+
+    function makeTelegramMessage(person) {
+      return [
+        "🔔 አዲስ የተመዘገበ ተሳታፊ (ውዳለም ዲጂታል ዕቁብ)",
+        "",
+        `👤 ስም: ${person.name}`,
+        `📞 ስልክ: ${person.phone}`,
+        `🏠 አድራሻ: ${person.address}`,
+        `🎟 ትኬት ቁጥር: #${person.ticket}`,
+        `🔄 ዙር: ${settings.round}`
+      ].join("\n");
+    }
+
+    // --- መረጃውን በቀጥታ ወደ እርስዎ የቴሌግራም ቦት የሚልክ ፋንክሽን ---
+    async function sendNotificationToTelegram(person) {
+      const botToken = "8692346459:AAEdrrW9abdLV2T1TmiHRDUCSzz9CAybKKw";
+      const chatId = "5101429556";
+      const text = encodeURIComponent(makeTelegramMessage(person));
+      const url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${text}`;
+
+      try {
+        await fetch(url);
+      } catch (error) {
+        console.error("Telegram notification error:", error);
+      }
+    }
+
+    function renderParticipants() {
+      const list = $("participantList");
+      const rows = participants();
+      const existing = new Map([...list.children].map(el => [el.dataset.rowId, el]));
+
+      if (!rows.length) {
+        list.innerHTML = `<p data-template-id="empty-participant-state" class="canva-text rounded-xl bg-slate-50 p-4 text-center text-sm">እስካሁን ምንም ተሳታፊ የለም።</p>`;
+        return;
+      }
+
+      const empty = list.querySelector("[data-template-id='empty-participant-state']");
+      if (empty) empty.remove();
+
+      rows.forEach(person => {
+        let element = existing.get(person.__backendId);
+        if (!element) {
+          element = $("participantTemplate").content.firstElementChild.cloneNode(true);
+          element.dataset.rowId = person.__backendId;
+
+          element.querySelector(".approve-button").addEventListener("click", async () => {
+            const current = records.find(row => row.__backendId === element.dataset.rowId);
+            if (!current) return;
+            const button = element.querySelector(".approve-button");
+            button.disabled = true;
+            const result = await window.dataSdk.update({ ...current, status: "approved" });
+            button.disabled = false;
+            if (!result.isOk) showToast("ማጽደቅ አልተቻለም።", "error");
+          });
+
+          element.querySelector(".telegram-button").addEventListener("click", () => {
+            const current = records.find(row => row.__backendId === element.dataset.rowId);
+            if (!current) return;
+            const telegramUrl = `https://t.me/share/url?url=${encodeURIComponent("https://wudalam21.github.io/-7/")}&text=${encodeURIComponent(makeTelegramMessage(current))}`;
+            window.open(telegramUrl, "_blank", "noopener,noreferrer");
+          });
+
+          element.querySelector(".delete-button").addEventListener("click", () => {
+            element.querySelector(".delete-confirm").classList.remove("hidden");
+            element.querySelector(".delete-confirm").classList.add("flex");
+            element.querySelector(".delete-button").classList.add("hidden");
+          });
+
+          element.querySelector(".cancel-delete-button").addEventListener("click", () => {
+            element.querySelector(".delete-confirm").classList.add("hidden");
+            element.querySelector(".delete-confirm").classList.remove("flex");
+            element.querySelector(".delete-button").classList.remove("hidden");
+          });
+
+          element.querySelector(".confirm-delete-button").addEventListener("click", async () => {
+            const current = records.find(row => row.__backendId === element.dataset.rowId);
+            if (!current) return;
+            const button = element.querySelector(".confirm-delete-button");
+            button.disabled = true;
+            const result = await window.dataSdk.delete(current);
+            if (!result.isOk) {
+              showToast("መሰረዝ አልተቻለም።", "error");
+              button.disabled = false;
+            }
+          });
+
+          list.appendChild(element);
+        }
+
+        element.querySelector(".participant-name").textContent = person.name;
+        element.querySelector(".participant-details").textContent = `ስልክ: ${person.phone} | አድራሻ: ${person.address}`;
+        element.querySelector(".participant-ticket").textContent = `ትኬት #${person.ticket}`;
+
+        const isApproved = person.status === "approved";
+        const statusBadge = element.querySelector(".participant-status");
+        statusBadge.textContent = isApproved ? "ጸድቋል" : "በመጠባበቅ ላይ";
+        statusBadge.style.cssText = isApproved ? "background:#DCFCE7;color:#15803D;" : "background:#FEF3C7;color:#B45309;";
+
+        const approveBtn = element.querySelector(".approve-button");
+        approveBtn.classList.toggle("hidden", isApproved);
+        approveBtn.querySelector(".canva-button").textContent = "አጽድቅ";
+
+        element.querySelector(".telegram-button").querySelector(".canva-button").textContent = "ቴሌግራም";
+        element.querySelector(".delete-button").querySelector(".canva-button").textContent = "ሰርዝ";
+        element.querySelector("[data-template-id='delete-confirm-label']").textContent = "እርግጠኛ ነዎት?";
+
+        existing.delete(person.__backendId);
+      });
+
+      existing.forEach(node => node.remove());
+    }
+
+    function renderAll() {
+      updateSettingsUI();
+      renderStats();
+      renderTicketGrid("participantGrid", true);
+      renderTicketGrid("adminGrid", false);
+      renderParticipants();
+    }
+
+    const dataHandler = {
+      onDataChanged(data) {
+        records = data;
+        settingsRecord = records.find(isSettingsRecord);
+        settings = parseSettings(settingsRecord);
+        renderAll();
+      }
+    };
+
+    window.addEventListener("DOMContentLoaded", async () => {
+      lucide.createIcons();
+
+      $("openRegistrationButton").addEventListener("click", () => showView("registration"));
+      $("openAdminButton").addEventListener("click", () => showView("admin"));
+      $("backHomeButton").addEventListener("click", () => showView("home"));
+
+      $("decreaseRange").addEventListener("click", () => {
+        settings.maxTicket = Math.max(10, settings.maxTicket - 10);
+        saveSettings(settings);
+      });
+      $("increaseRange").addEventListener("click", () => {
+        settings.maxTicket = Math.min(999, settings.maxTicket + 10);
+        saveSettings(settings);
+      });
+
+      $("decreasePrice").addEventListener("click", () => {
+        settings.price = Math.max(5, settings.price - 5);
+        saveSettings(settings);
+      });
+      $("increasePrice").addEventListener("click", () => {
+        settings.price = Math.min(10000, settings.price + 5);
+        saveSettings(settings);
+      });
+
+      $("decreaseRound").addEventListener("click", () => {
+        settings.round = Math.max(1, settings.round - 1);
+        saveSettings(settings);
+      });
+      $("increaseRound").addEventListener("click", () => {
+        settings.round = Math.min(999, settings.round + 1);
+        saveSettings(settings);
+      });
+
+      $("registrationForm").addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const name = $("nameInput").value.trim();
+        const phone = $("phoneInput").value.trim();
+        const address = $("addressInput").value.trim();
+        const ticket = Number($("ticketInput").value);
+
+        if (!name || !phone || !address || !ticket) {
+          showToast("እባክዎ ሁሉንም መረጃዎች በትክክል ይሙሉ", "error");
+          return;
+        }
+
+        if (ticketState(ticket) !== "available") {
+          showToast("ይህ ትኬት ተይዟል፣ ሌላ ይምረጡ", "error");
+          return;
+        }
+
+        $("registrationLoading").classList.remove("hidden");
+        $("registerButton").disabled = true;
+
+        const newPerson = {
+          name,
+          phone,
+          address,
+          ticket,
+          is_winner: false,
+          won_at: "",
+          status: "pending"
+        };
+
+        const result = await window.dataSdk.create(newPerson);
+
+        $("registrationLoading").classList.add("hidden");
+        $("registerButton").disabled = false;
+
+        if (!result.isOk) {
+          showToast("ምዝገባው አልተሳካም, እባክዎ እንደገና ይሞክሩ", "error");
+          return;
+        }
+
+        // መረጃው በተሳካ ሁኔታ ሲመዘገብ በቀጥታ ወደ እርስዎ ቴሌግራም ቦት ይልካል
+        sendNotificationToTelegram(newPerson);
+
+        showToast("ምዝገባው በተሳካ ሁኔታ ተጠናቋል!");
+        $("registrationForm").reset();
+        showView("home");
+      });
+
+      $("drawButton").addEventListener("click", async () => {
+        const validRows = participants().filter(r => r.status === "approved" && !r.is_winner);
+        if (!validRows.length) {
+          showToast("ለዕጣ የሚሆን የጸደቀ አዲስ ተሳታፊ የለም!", "warning");
+          return;
+        }
+
+        const winnerPanel = $("winnerPanel");
+        const wheel = $("wheel");
+        winnerPanel.classList.remove("hidden");
+        wheel.classList.add("wheel-spin");
+
+        $("winnerTicket").textContent = "ማዞር...";
+        $("winnerName").textContent = "እየተመረጠ ነው...";
+
+        setTimeout(async () => {
+          wheel.classList.remove("wheel-spin");
+          const chosen = validRows[Math.floor(Math.random() * validRows.length)];
+
+          $("winnerTicket").textContent = `ትኬት #${chosen.ticket}`;
+          $("winnerName").textContent = chosen.name;
+
+          await window.dataSdk.update({ ...chosen, is_winner: true, won_at: new Date().toISOString() });
+          showToast(`ዕጣው ደርሷል፦ ${chosen.name} (#${chosen.ticket})!`);
+        }, 2700);
+      });
+
+      const initResult = await window.dataSdk.init(dataHandler);
+      if (!initResult.isOk) {
+        showToast("ዳታቤዙን መጫን አልተቻለም።", "error");
+      }
+    });
+  </script>
+ </body>
+</html>
